@@ -195,3 +195,12 @@ This is the format of the `data.json` file for the different `city` objects. How
 ```
 
 The project is based on this format and data, but you can modify the Java classes to handle custom JSON files tailored to your needs, such as store inventory, various articles, or any information you wish to manage. Since the variable names and types match the JSON format, customization is straightforward for your specific requirements or creativity.
+
+
+
+## Application Functionality
+
+### Demo Video
+
+https://github.com/user-attachments/assets/c034841e-2d8c-45be-85f8-2515a3ba3045
+
