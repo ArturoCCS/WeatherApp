@@ -58,14 +58,18 @@
             <!-- Plugin para copiar recursos -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
+                <artifactId>maven-dependency-plugin</artifactId>
                 <version>3.2.0</version>
                 <executions>
                     <execution>
-                        <phase>generate-resources</phase>
                         <goals>
-                            <goal>resources</goal>
+                            <goal>tree</goal>
                         </goals>
+                        <configuration>
+                            <outputFile>${project.build.directory}/dependency-tree.txt</outputFile>
+                            <!-- Limita la profundidad del gráfico de dependencias -->
+                            <depth>3</depth>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
