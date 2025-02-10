@@ -15,7 +15,6 @@
     </properties>
 
     <dependencies>
-        <!-- Dependencia de JavaFX completa -->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
@@ -27,7 +26,6 @@
             <version>${javafx.version}</version>
         </dependency>
 
-        <!-- Dependencia para trabajar con JSON -->
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
@@ -37,13 +35,13 @@
 
     <build>
         <plugins>
-            <!-- Plugin para manejar JavaFX -->
+
             <plugin>
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
-                <version>0.0.8</version> <!-- Actualiza la versión del plugin -->
+                <version>0.0.8</version> 
                 <configuration>
-                    <mainClass>com.arturoccs.application.Main</mainClass> <!-- Asegúrate de que la ruta sea correcta -->
+                    <mainClass>com.arturoccs.application.Main</mainClass>
                 </configuration>
                 <executions>
                     <execution>
@@ -54,7 +52,6 @@
                 </executions>
             </plugin>
 
-            <!-- Plugin para copiar recursos -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
@@ -66,14 +63,11 @@
                         </goals>
                         <configuration>
                             <outputFile>${project.build.directory}/dependency-tree.txt</outputFile>
-                            <!-- Limita la profundidad del gráfico de dependencias -->
                             <depth>3</depth>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
-
-            <!-- Plugin para compilar el código Java -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>

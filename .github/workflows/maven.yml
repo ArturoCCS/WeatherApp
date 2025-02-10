@@ -21,7 +21,7 @@ jobs:
         cache: maven
     
     - name: Clean Maven cache
-      run: mvn dependency:purge-local-repository  # Limpiar el caché de Maven antes de continuar
+      run: mvn dependency:purge-local-repository  
     
     - name: Generate dependency tree
       run: mvn dependency:tree -DoutputFile=dependency-tree.txt
