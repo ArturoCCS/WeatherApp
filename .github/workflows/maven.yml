@@ -29,5 +29,3 @@ jobs:
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts
     - name: Update dependency graph
       uses: advanced-security/maven-dependency-submission-action@v1  # Usa la última versión estable
-      with:
-        depth: 2  # Limitar la profundidad del gráfico de dependencias
