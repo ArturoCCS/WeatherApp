@@ -41,9 +41,8 @@
             <plugin>
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
-                <version>0.0.8</version>
+                <version>0.0.9</version> <!-- Actualiza la versión del plugin -->
                 <configuration>
-                    <!-- Aquí va la ruta correcta a tu clase Main -->
                     <mainClass>com.arturoccs.application.Main</mainClass> <!-- Asegúrate de que la ruta sea correcta -->
                 </configuration>
                 <executions>
