@@ -12,69 +12,30 @@ This project is designed to manage and analyze large volumes of meteorological d
 
 ### Requirements
 
-- Necessary library for JSON to Java object conversion (`Gson`).  
-    [Gson Maven Repository](https://mvnrepository.com/artifact/com.google.code.gson/gson/2.11.0)
-    
-- Usage of (`JavaFX`).  
-    [JavaFX - Gluon](https://gluonhq.com/products/javafx/)
-	
-	- Add the libraries to the Classpath: **Add External JARs**
-	![Pasted image 20250115190639](https://github.com/user-attachments/assets/cc00ab06-efe4-4648-bd1f-68bb0b2a36a5)
-	![Pasted image 20250115190900](https://github.com/user-attachments/assets/3e246931-1984-44b9-8de7-0c4e15f14155)
-	
+- **Java SE 22**
+- **Maven** for dependency management.
 
-### Note
-
-- Using **Java SE 22**
-- Using **Eclipse IDE 2022**, due to compatibility with the (e(fx)clipse 3.8.0) plugin.
-
+The necessary dependencies (Gson, JavaFX) are already included in the `pom.xml`. Just ensure you have Maven installed and properly configured in your development environment.
 
 ### Installation Steps
-
-#### Using Git Bash
 
 1. Clone this repository:
 
 ```bash   
-$ git init
-```
-2. Add the repository link:
-
- ```bash 
-   $ git clone https://github.com/ArturoCCS/WeatherApp.git
+$ git clone https://github.com/ArturoCCS/WeatherApp.git
 ```
 
-#### Using Eclipse
-
-1. Import the project into Eclipse:
-    ![Pasted image 20250115183602](https://github.com/user-attachments/assets/2859b7e6-4670-4c6e-9fd9-541e46bf2e4b)
-    ![Pasted image 20250115183638](https://github.com/user-attachments/assets/fab8c9d8-e850-48bd-bc30-3c7e5e5ecf5d)
-    ![Pasted image 20250115183706](https://github.com/user-attachments/assets/61beaa95-995e-48c3-86e5-582e4fc25f5d)
-    ![Pasted image 20250115183908](https://github.com/user-attachments/assets/fb5b87df-18f8-4a9f-9fad-d428d8032686)
-    ![Pasted image 20250115183941](https://github.com/user-attachments/assets/1a5be4c0-32e0-43fc-b117-dea3fc80a67b)
-
-3. Select a directory to save the project.
-	
-	![Pasted image 20250115184015](https://github.com/user-attachments/assets/78850749-6545-4976-bddf-8061cc46ccd3)
-
-
-
-### Execution Steps (Eclipse)
-
-1. Once installed, select the **Main** class:
-    ![Pasted image 20250115184731](https://github.com/user-attachments/assets/8485825d-412f-4b88-b1ed-796998460f9b)
-2. Open **Run Configurations**:
-    ![Pasted image 20250115184827](https://github.com/user-attachments/assets/6f253cd2-09de-4610-b321-496f46b27470)
-3. Select **Java Application**:
-    ![Pasted image 20250115184941](https://github.com/user-attachments/assets/de966631-7fd3-4d92-a1a0-bee80982b093)
-4. Go to the **Arguments** tab:
-    ![Pasted image 20250115185012](https://github.com/user-attachments/assets/d0818151-bd21-440f-b0fa-b75c8e551523)
-5. Add the following (example):
+### Run
+ 
+```bash
+cd WeatherApp
 ```
---module-path /path/to/javafx-sdk/lib --add-modules javafx.controls,javafx.fxml
+```bash  
+mvn clean install
 ```
-6. Ensure the path to the installed `javafx-sdk` is correct:  
-    `/path/to/javafx-sdk/lib`
+```bash
+mvn javafx:run
+```
 
 ## Usage
 

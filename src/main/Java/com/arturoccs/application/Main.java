@@ -14,7 +14,6 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         try {
-            // Asegúrate de que la ruta FXML sea correcta, la ruta debe ser desde 'resources'
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/assets/HomeScreen.fxml"));
 
             Parent root = loader.load();
@@ -49,7 +48,6 @@ public class Main extends Application {
     }
 
     private Parent createPage(Integer pageIndex, Stage primaryStage) {
-        // Aquí deberías devolver la vista para la página correspondiente
         return null;
     }
 
